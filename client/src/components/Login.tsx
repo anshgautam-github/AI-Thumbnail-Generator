@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SoftBackdrop from "./SoftBackdrop";
 
 const Login = () => {
 
@@ -18,9 +19,10 @@ const Login = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
     }
-    
+
      return (
         <>
+            <SoftBackdrop/>
             <div className="min-h-screen flex items-center justify-center">
                 <form
                 onSubmit={handleSubmit}
@@ -64,12 +66,7 @@ const Login = () => {
                 </p>
             </form>
             </div>
-           
-            {/* Soft Backdrop*/}
-            <div className='fixed inset-0 -z-1 pointer-events-none'>
-                <div className='absolute left-1/2 top-20 -translate-x-1/2 w-245 h-115 bg-linear-to-tr from-indigo-800/35 to-transparent rounded-full blur-3xl' />
-                <div className='absolute right-12 bottom-10 w-105 h-55 bg-linear-to-bl from-indigo-700/35 to-transparent rounded-full blur-2xl' />
-            </div>
+    
         </>
     )
 }
