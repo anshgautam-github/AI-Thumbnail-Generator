@@ -37,7 +37,7 @@ export default function FeaturesSection() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    Our AI understands what makes a video go viral and designs thumbnails accordingly .
+                    Our AI understands what makes a video go viral.
                 </motion.p>
                 <div className="grid grid-cols-1 md:grid-cols-3 mt-8 gap-10">
                     <motion.div className="md:col-span-2"
